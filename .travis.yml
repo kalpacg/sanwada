@@ -9,7 +9,7 @@ script:
 - docker --version
 - docker run hello-world
 - docker image ls
-- docker run glassfish:4.0
+- travis_wait 20 docker run glassfish:4.0
 - export GF_INST_DIR=/glassfish4
 - $GF_INST_DIR/bin/asadmin deploy build/libs/sanwada.war
 - docker container ls
