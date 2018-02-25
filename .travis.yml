@@ -1,6 +1,6 @@
 language: java
 
-before_install:
-- sudo apt-get install -y docker
+script:
+- sudo apt-get -y install docker
 - docker pull oracle/glassfish
 
