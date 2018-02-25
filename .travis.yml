@@ -3,4 +3,6 @@ language: java
 script:
 - sudo apt-get -y install docker
 - docker pull oracle/glassfish
-
+- pwd
+- ls 
+- ls build/libs/
