@@ -9,4 +9,6 @@ script:
 - docker --version
 - docker run hello-world
 - docker run oracle/glassfish 
+- export GF_INST_DIR=/glassfish5
+- $GF_INST_DIR/bin/asadmin deploy build/libs/sanwada.war
 - docker container ls
