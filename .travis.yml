@@ -2,14 +2,14 @@ language: java
 
 script:
 - sudo apt-get -y install docker
-- docker pull oracle/glassfish:5.0
+- docker pull glassfish:4.0
 - pwd
 - ls 
 - ls build/libs/
 - docker --version
 - docker run hello-world
 - docker image ls
-- docker run oracle/glassfish:5.0 
-- export GF_INST_DIR=/glassfish5
+- docker run glassfish:4.0
+- export GF_INST_DIR=/glassfish4
 - $GF_INST_DIR/bin/asadmin deploy build/libs/sanwada.war
 - docker container ls
