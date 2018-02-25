@@ -6,3 +6,7 @@ script:
 - pwd
 - ls 
 - ls build/libs/
+- docker --version
+- docker run hello-world
+- docker run oracle/glassfish 
+- docker container ls
