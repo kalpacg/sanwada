@@ -8,6 +8,7 @@ script:
 - ls build/libs/
 - docker --version
 - docker run hello-world
+- docker image ls
 - docker run oracle/glassfish:5.0 
 - export GF_INST_DIR=/glassfish5
 - $GF_INST_DIR/bin/asadmin deploy build/libs/sanwada.war
